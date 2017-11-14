@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+
+      <title>My Portfolio</title>
+
+       <!-- Bootstrap -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="css/styles.min.css">
+      <link rel="stylesheet" href="css/buttons.css">
+      <link rel="stylesheet" href="css/animations.css">
+      <link rel="stylesheet" href="fullPage\jquery.fullPage.css">
+      <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:100" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:600,900" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- <link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" /> -->
+
+   </head>
+   <body>
+      <nav id="menu">
+         <ul class="navigation-elements" id="menu">
+            <li class="nav-element home"><a data-menuanchor="home_a" class="active" href="#home_a">Home</a></li>
+            <li class="nav-element"><a data-menuanchor="projects_a" href="#projects_a">Projects</a></li>
+            <li class="nav-element"><a data-menuanchor="contact_a" href="#contact_a">Contact</a></li>
+         </ul>
+      </nav>
+      <div id="fullpage" class="re">
+         <div class="homePage section" id="home">
+            <div class="container">
+               <section>
+                  <h1 class="superFZ animate-pop-in header-title">HELLO.</h1>
+                  <h2 class="mediumFZ animate-pop-in sub-header-title">My name's Manuel.</h2>
+                  <h3 class="smallFZ animate-pop-in subsub-header-title">I'm a web dev.</h3>
+                  <!-- <a href="#projects_a"><button class=" buttons default-button animate-pop-in">My Works</button></a><br> -->
+                  <i class="fa fa-twitter animate-pop-in buttons" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin animate-pop-in buttons" aria-hidden="true"></i>
+                  <i class="fa fa-codepen animate-pop-in buttons" aria-hidden="true"></i>
+               </section>
+
+            </div>
+         </div>
+         <!-- homePage -->
+         <section class="projects section" id="projects" ng-controller="listController">
+            <!-- <div class="project-selection">
+               <ul>
+                  <li ng-repeat="project in projects" ng-click="selectProject(project.title, project.text)">{{project.title}}</li>
+
+               </ul>
+            </div> -->
+            <div class="projects-wrapper projects-animation">
+
+               <div class="project-block slide">
+                  <div class="header-title-wrapper"><h2 class="header-title">Project 1</h2></div>
+                  <div class="container project-img">
+                     <img src="img/project1-o.png" alt="" class="img-responsive">
+                  </div>
+                  <div class="container project-text">
+                     <p>Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.</p>
+                  </div>
+               </div>
+               <div class="project-block slide">
+                  <div class="header-title-wrapper"><h2 class="header-title">Project 2</h2></div>
+                  <div class="container project-img">
+                     <img src="img/project1-o.png" alt="" class="img-responsive">
+                  </div>
+                  <div class="container project-text">
+                     <p>Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.</p>
+                  </div>
+               </div>
+            </div>
+
+
+         </section>
+         <section class="contact section" id="contact">
+            <div class="container">
+               <h2 class="mediumFZ">Leave me a message!</h2>
+               <div class="col-sm-12 col-md-5 center">
+
+                  <form action="">
+                     <div class="form-group has-success">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" class="form-control">
+                     </div>
+                     <div class="form-group has-warning">
+                        <label for="email">Email Adress</label>
+                        <input type="text" id="email" class="form-control">
+                     </div>
+                     <div class="form-group has-error">
+                        <label for="message">Your message</label>
+                        <textarea class="form-control" name="message" rows="6" id="message"></textarea>
+                     </div>
+
+                     <button type="submit" class="btn btn-success btn-lg">Send</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+      <script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/app.js"></script>
+   </body>
+</html>

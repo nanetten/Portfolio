@@ -1,0 +1,45 @@
+
+@keyframes no-transform {
+
+   100% {
+      opacity: 1;
+      transform: none;
+   }
+}
+.animate-pop-in {
+   opacity: 0;
+   transform: translateY(-6rem) scale(.8);
+   animation: no-transform .8s cubic-bezier(0,.9,.3,1.2) forwards;
+
+
+/*cubic-bezier(0,.9,.3,1.2)*/
+}
+.homePage:before {
+         animation: no-transform  1.5s .5s cubic-bezier(0,.5,0,1) forwards
+}
+.header-title {
+   animation-delay: .4s;
+
+}
+.sub-header-title {
+   animation-delay: .6s;
+}
+.subsub-header-title {
+   animation-delay: .8s;
+}
+.buttons {
+   animation-delay: 1.15s;
+}
+
+.projects-animation {
+   transition: all 1s ease;
+}
+.negative-transform {
+   transform: translateX(-100%);
+}
+.zero-transform {
+   transform: none;
+}
+.positive-transform {
+   transform: translateX(100%);
+}
