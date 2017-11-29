@@ -1,0 +1,116 @@
+
+@media screen and (width: 768px) {
+   .hire-me {
+      padding: 45px 0;
+   }
+   .hire-me h1 {
+      font-size: 3rem;
+   }
+   section {
+      padding: 80px 0;
+   }
+   .section-title {
+      padding-bottom: 80px !important;
+   }
+   .superFZ {
+      font-size: 180px;
+   }
+   .masonry {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+
+
+   }
+
+}
+
+@media screen and (max-width: 767px) {
+   .hire-me {
+      padding: 10px 10px 25px;
+      
+   }
+   .hire-me h1 {
+      font-size: 2.5rem;
+      margin: 10px -0px;
+   }
+   section {
+      padding: 40px 0;
+   }
+   .section-title {
+      padding-bottom: 40px !important;
+   }
+   .masonry {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+      padding: 0;
+
+   }
+   .container {
+      width: 100%;
+   }
+   .homePage section {
+      padding: 0 0 60px !important;
+   }
+   .homePage .container .text-block {
+      width: calc(100% - 30px);
+   }
+   .homePage .container .text-block p {
+      font-size: 26px;
+   }
+   .homePage .container .text-block p:nth-last-of-type(1) {
+      font-size: 20px;
+   }
+   nav .navigation-elements li {
+      letter-spacing: 0px;
+      padding: 0 18px !important;
+   }
+   .superFZ {
+      font-size: 80px;
+      letter-spacing: -6px;
+      line-height: .95;
+      margin: 0 0 35px;
+   }
+
+   .mediumFZ {
+      font-size: 44px;
+      margin: 0;
+      margin-top: -2.4px;
+      margin-bottom: 15px;
+   }
+
+   .smallFZ {
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 5px;
+   }
+
+}
+@media screen and (min-width: 1980px) {
+   .container {
+      width: 1310px;
+   }
+   .superFZ {
+
+      font-size: 300px;
+      letter-spacing: -6px;
+      line-height: .95;
+      margin: 0 0 52.5px;
+   }
+   .mediumFZ {
+      font-size: 82.5px;
+      margin: 0;
+      margin-top: -3.6px;
+      margin-bottom: 22.5px
+   }
+   .smallFZ {
+      font-size: 37.5px;
+      margin: 0;
+      margin-bottom: 22.5px;
+   }
+   .default-button {
+      font-size: 32px;
+      padding: 20px 49px;
+   }
+}
